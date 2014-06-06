@@ -1,0 +1,45 @@
+
+
+    /* color */
+    .container{ 
+      background-color: #497bad;      
+    }
+
+    @media (min-width: 40rem) { 
+      .container{ background-color: #017bad; }
+    }
+     
+    @media (min-width: 64rem) { 
+      .container{ background-color: #997bad; }
+    }    
+
+    .row{
+      border: 2px solid rgba(255,255,255,0.2);
+      background-color: rgba(225,255,255,0.1);
+    }
+    .column{
+      background-color: rgba(225,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0.2);
+    }
+    .column.flow-opposite { background-color: rgba(215, 44, 44, 0.2);}  
+
+
+    /* default size & space */
+    .container{      
+      min-height: 32rem;
+      padding: 1rem;
+    }
+
+    .row{
+      min-height: 2rem;
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .column{
+      min-height: 1.5rem;
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      
+    }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Responsive grid</title> 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+  <link rel="stylesheet" type="text/css" href="example.css">
+
+</head>
+<body>
+  
+  <p id="width"></p>
+
+  <div class="container">
+    <div class="row clearfix">
+      <div class="column full"></div>
+    </div>    
+    <div class="row clearfix">
+      <div class="column two-thirds"></div>
+    </div>    
+    <div class="row clearfix">      
+      <div class="column half"></div>
+    </div>    
+    <div class="row clearfix">
+      <div class="column third"></div>
+    </div>    
+    <div class="row clearfix">      
+      <div class="column fourth"></div>
+    </div>                
+    <div class="row clearfix">      
+      <div class="column tenth"></div>
+    </div>   
+
+    <div class="row clearfix">
+      <div class="column third flow-opposite"></div>
+      <div class="column half"></div>
+    </div>    
+  </div>
+
+  <script type="text/javascript">
+    window.onresize = window.onload = function () {
+      document.getElementById("width").innerHTML = "width: " + window.innerWidth;
+    };
+  </script>
+
+</body>
+</html>
